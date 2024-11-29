@@ -20,15 +20,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="text-3xl py-3 font-bold">Digital Marketer</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        I am a Digital Marketer with over 3 years experience helping businesses build and manage their online presence and engage with their audience. 
+        I specialize in creating strategic content that drives engagement, increases brand awareness, and delivers results across platforms. 
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="https://www.linkedin.com/in/osinachukwu-kalu-oji-566614141/?trk=opento_sprofile_topcard" target="_blank"> Let's connect!</a>
+      <a href="http://wa.me/2348152164199" target="_blank" class="btn btn-outline ml-5">
+        Send a Message
       </a>
     </div>
   </div>
@@ -60,23 +59,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     badge="FOSS"
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
